@@ -14,6 +14,9 @@
 			width: 110px;
 			display: inline-block;	
 	}
+	a{
+		text-decoration: none;
+	}
 </style>
 	<nav>
 		<h1>Página de busca</h1>

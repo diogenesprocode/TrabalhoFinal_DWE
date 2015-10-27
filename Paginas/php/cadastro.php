@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
 	<meta charset="UTF-8">
-	<title>RFDIBiblioteca - Início</title>
+	<title>RFDIBiblioteca - Cadastro de Livros</title>
 </head>
 <body>
 <style>
