@@ -3,15 +3,16 @@
 	$autor = $_POST['autor'];
 	$tombo = $_POST['tombo'];
 	$idEtiqueta = $_POST['idEtiqueta'];
+	$idestante = $_POST['idestante'];
 
 	$dbh = new PDO('pgsql:host=localhost;port=5432;dbname=trabalhofinal', 'postgres', '');
+	$sql = "INSERT INTO livroetiquetado VALUES ('$idEtiqueta', '$tombo', '$idestante','$autor', '$titulo')";
 	$resultado = $dbh->exec($sql);
-	
-	$sql = "INSERT INTO emp VALUES ($idEtiqueta, $tombo, $idestante, $autor, $titulo"
 	if($resultado){
 		echo 'Inserido com sucesso!';
 	}
 	else{
 		echo 'Erro!';
+		print_r($dbh->errorInfo());
 	}
 ?>

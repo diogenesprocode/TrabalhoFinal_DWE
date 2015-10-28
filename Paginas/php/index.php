@@ -2,22 +2,10 @@
 <html lang="pt-br">
 <head>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../css/page.css" media="all" type="text/css" />
 	<title>RFDIBiblioteca - Início</title>
 </head>
 <body>
-<style>
-	h1{
-		background: url("../img/img1.jpg");
-		text-shadow: 1px 1px 2px white;            
-	}
-	label{
-			width: 110px;
-			display: inline-block;	
-	}
-	a{
-		text-decoration: none;
-	}
-</style>
 	<nav>
 		<h1>Página de busca</h1>
 		<a href="index.php">Início</a>				
@@ -26,15 +14,15 @@
 	<section>
 		<form action="bancobusca.php" method="post">
 			<label for="nome">Nome do Livro</label>
-			<input type="text" id="nome">
+			<input type="text" id="nome" maxlength="30">
 			<label for="autor">Autor do Livro</label>
-			<input type="text" id="autor">
+			<input type="text" id="autor" maxlength="30">
 			<br />
 			<label for="idLivro">Tombo do Livro</label>
-			<input type="text" id="idLivro">
+			<input type="number" id="idLivro">
 			<br />
 			<input type="submit" value="Pesquisar">
-			<input type="submit" value="Limpar">			
+			<input type="reset" value="Limpar">		
 		</form>
 	</section>
 </body>
