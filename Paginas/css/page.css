@@ -1,11 +1,9 @@
-	h1{
-		background: url("../img/img1.jpg");
-		text-shadow: 1px 1px 2px white;            
-	}
-	label{
-			width: 110px;
-			display: inline-block;	
-	}
-	a{
-		text-decoration: none;
-	}
+body {
+    background-image: url("../img/img1.jpg");
+    background-repeat: repeat;
+    background-position: left;
+}
+
+.form-control{
+    width: 33%;
+}

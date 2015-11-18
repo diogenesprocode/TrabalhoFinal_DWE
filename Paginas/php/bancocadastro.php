@@ -6,6 +6,8 @@
 	$idestante = $_POST['idestante'];
 
 	$dbh = new PDO('pgsql:host=localhost;port=5432;dbname=trabalhofinal', 'postgres', '');
+	//$dbh = new PDO('mysql:host=localhost;port=3306;dbname=trabalhofinal', 'root', '');
+	
 	$sql = "INSERT INTO livroetiquetado VALUES ('$idEtiqueta', '$tombo', '$idestante','$autor', '$titulo')";
 	$resultado = $dbh->exec($sql);
 	if($resultado){
