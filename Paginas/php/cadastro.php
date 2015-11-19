@@ -20,6 +20,7 @@
 	<title>RFDIBiblioteca - Cadastro de Livros</title>
 </head>
 <body>
+
 	<!-- Menu de navegação -->
 	<nav class="navbar navbar-inverse">
 	  <div class="container-fluid">
@@ -36,34 +37,40 @@
 	</nav>
 	<!-- FIM -->
 
-		<div class="container">
-			<div class="page-header">
-				<h1>Cadastro de livros</h1>
-			</div>	
-			<section>
-				<!-- Formulario -->
-				<form class="form-horizontal" action="bancocadastro.php" method="post">
-					<div class="form-group">
-						<label for="titulo">Título do Livro</label>
-						<input type="text" class="form-control" id="titulo" name="titulo" maxlength="30">
-						<label for="autor">Autor do Livro</label>
-						<input type="text" class="form-control" id="autor" name="autor" maxlength="30">
-					</div>
-					<div class="form-group">
-						<label for="tombo">Tombo do Livro</label>
-						<input type="number" class="form-control" id="tombo" name="tombo" min="0" required="required">
-						<label for="idEtiqueta">Etiqueta RFID</label>
-						<input type="text" class="form-control" id="idEtiqueta" name="idEtiqueta" maxlength="11" required="required">
-					</div>
-					<div class="form-group">
-						<label for="idestante">Estante do Livro</label>
-						<input type="number" class="form-control" id="idestante" name="idestante" min="0" required="required">
-					</div>		
-					<input type="submit" value="Cadastrar" class="btn btn-default">
-					<input type="reset" value="Limpar" class="btn btn-default">			
-				</form>
-				<!-- FIM -->			
-			</section>
+	<!-- Titulo da pagina -->
+	<div class="container-fluid">
+		<div class="page-header">
+			<h1>Cadastro de livros</h1>
+		</div>
 	</div>
+	<!-- FIM -->
+
+	<!-- Formulario -->
+	<div class="container">				
+		<section>			
+			<form class="form-horizontal" action="bancocadastro.php" method="post">
+				<div class="form-group">
+					<label for="titulo">Título do Livro</label>
+					<input type="text" class="form-control" id="titulo" name="titulo" maxlength="50">
+					<label for="autor">Autor do Livro</label>
+					<input type="text" class="form-control" id="autor" name="autor" maxlength="50">
+				</div>
+				<div class="form-group">
+					<label for="tombo">Tombo do Livro</label>
+					<input type="number" class="form-control" id="tombo" name="tombo" min="0" required="required">
+					<label for="idEtiqueta">Etiqueta RFID</label>
+					<input type="text" class="form-control" id="idEtiqueta" name="idEtiqueta" maxlength="11" required="required">
+				</div>
+				<div class="form-group">
+					<label for="idestante">Estante do Livro</label>
+					<input type="number" class="form-control" id="idestante" name="idestante" min="0" required="required">
+				</div>		
+				<input type="submit" value="Cadastrar" class="btn btn-default">
+				<input type="reset" value="Limpar" class="btn btn-default">			
+			</form>			
+		</section>
+	</div>
+	<!-- FIM -->
+	
 </body>
 </html>

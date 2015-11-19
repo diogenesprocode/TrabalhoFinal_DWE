@@ -2,8 +2,6 @@
 <html lang="pt-br">
 <head>
 	<meta charset="UTF-8">
-	<link rel="icon" href="../img/favicon.ico" type="image/ico">
-
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 	<!-- Latest compiled and minified CSS -->
@@ -16,7 +14,7 @@
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" 
 		integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
-
+	<link rel="icon" href="../img/favicon.ico" type="image/ico">
 	<title>RFDIBiblioteca - Início</title>
 </head>
 <body>
@@ -35,19 +33,22 @@
 	  </div>
 	</nav>
 	<!-- FIM -->
-
-	<div class="container">
+	<div class="container-fluid">
 		<div class="page-header">
 			<h1>Pesquisa de livros</h1>
-		</div>	
+		</div>
+	</div>
+
+	<div class="container">
+			
 		<section>
 			<!-- Formulario -->
 			<form class="form-horizontal" action="bancopesquisa.php" method="post">
 				<div class="form-group">
 					<label for="nome">Nome do Livro</label>
-					<input type="text" class="form-control" id="titulo" name="titulo" maxlength="30">
+					<input type="text" class="form-control" id="titulo" name="titulo" maxlength="30" placeholder="Nome do livro">
 					<label for="autor">Autor do Livro</label>
-					<input type="text" class="form-control" id="autor" name="autor" maxlength="30">
+					<input type="text" class="form-control" id="autor" name="autor" maxlength="30" placeholder="Autor do livro">
 					<label for="idLivro">Tombo do Livro</label>
 					<input type="number" class="form-control" id="tombo" name="tombo" min="0" value="0">
 				</div>
