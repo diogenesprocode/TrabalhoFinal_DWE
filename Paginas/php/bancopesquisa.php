@@ -3,8 +3,8 @@
 	$autor = $_POST['autor'];
 	$tombo = $_POST['tombo'];
 
-  $dbh = new PDO('mysql:host=localhost;port=3306;dbname=trabalhofinal', 'root', '');
-	//$dbh = new PDO('pgsql:host=localhost;port=5432;dbname=trabalhofinal', 'postgres', '');
+  //$dbh = new PDO('mysql:host=localhost;port=3306;dbname=trabalhofinal', 'root', '');
+	$dbh = new PDO('pgsql:host=localhost;port=5432;dbname=trabalhofinal', 'postgres', '');
 	
   if ($titulo == "" && $autor == "" && $tombo == 0) {
     $sql = "SELECT * FROM livroEtiquetado";
@@ -58,7 +58,7 @@
     <!-- Titulo da pagina -->
     <div class="container-fluid">
       <div class="page-header">
-        <h1>Cadastro de livros</h1>
+        <h1>Resultados da Pesquisa</h1>
       </div>
     </div>
     <!-- FIM -->
